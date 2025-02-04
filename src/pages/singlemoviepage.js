@@ -11,8 +11,13 @@ function SingleMoviePage() {
   }
   if (error) {
     return (
-      <div className="loading-screen">
-        <h1>We could not find this movie at this time <br/> Please refresh the page later</h1>
+      <div className='quiz-end'>
+        <h1>
+        We could not find this movie at this time
+          <br/> 
+          Please refresh the page later
+        </h1>
+        <button className="submit-button" onClick={() => window.location.href = '/'}>Back Home</button>
       </div>
     );
   }

@@ -27,7 +27,14 @@ function QuizPage() {
     );
   }
   if (error) {
-    return <p>Error: {error.message}</p>;
+    return (
+    <div className='quiz-end'>
+      <h1>
+        Oops, it looks like we can't find a quiz for you to take right now, please try again later
+      </h1>
+      <button className="submit-button" onClick={() => window.location.href = '/'}>Back Home</button>
+    </div>
+    );
   }
   if (data) {
     var question = <QuizQuestion 

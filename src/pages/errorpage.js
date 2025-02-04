@@ -1,9 +1,10 @@
 function ErrorPage() {
   return (
-    <div className="container-inner col">
+    <div className='quiz-end'>
       <h1>
-        There has been an error finding the page you have requested
+        Oops, it looks like we can't find the page you're looking for
       </h1>
+      <button className="submit-button" onClick={() => window.location.href = '/'}>Back Home</button>
     </div>
   );
 }
